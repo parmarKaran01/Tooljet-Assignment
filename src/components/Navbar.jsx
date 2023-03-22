@@ -1,5 +1,5 @@
-import { Brightness1, Close, Menu } from "@mui/icons-material";
-import { Avatar, IconButton, Typography } from "@mui/material";
+import {  Close, Menu } from "@mui/icons-material";
+import { Avatar, IconButton} from "@mui/material";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -17,51 +17,6 @@ export default function Navbar() {
     },
     { name: "Pricing", link: "/pricing" },
   ];
-  //   const [showHoverItems, setShowHoverItems] = useState(false);
-  //   return (
-  //     <div className="w-full lg:h-[6rem] md:h-[100%] shadow-md z-50 py-4">
-  //       <div className="lg:flex lg:flex-row md:flex-col items-center w-full ">
-  //         <div className="lg:flex lg:flex-row md:flex-col bg-blue-300">
-  //           <div className="font-bold text-2xl cursor-pointer flex flex-row items-center ml-[10vw]">
-  //             <Brightness1 />
-  //             <span>Untitled</span>
-  //           </div>
-
-  //           <div className="lg:ml-[4vw] lg:flex lg:flex-row lg:items-center md:flex md:flex-col md:ml-0 sm:ml-0 bg-red-200">
-  //             <ul className="lg:flex lg:flex-row lg:gap-[3vw] md:flex md:flex-col md:gap-4 flex flex-col gap-4">
-  //               {navArray.map((item) => {
-  //                 return (
-  //                   <>
-  //                     <li
-  //                       key={item.name}
-  //                       onMouseEnter={() => setShowHoverItems(true)}
-  //                       onMouseLeave={() => setShowHoverItems(false)}
-  //                       className="cursor-pointer text-slate-500 md:pl-4 pl-4 shadow-sm"
-  //                     >
-  //                       {item.name}
-  //                     </li>
-  //                   </>
-  //                 );
-  //               })}
-  //             </ul>
-  //           </div>
-  //         </div>
-
-  //         <div className="lg:ml-auto lg:pr-[10vw] md:hidden hidden lg:block">
-  //           <Avatar />
-  //         </div>
-
-  //         <button className="lg:hidden md:block sm:block bg-yellow-200">
-  //           <Menu
-  //             sx={{
-  //               height: "2rem",
-  //               width: "2rem",
-  //             }}
-  //           />
-  //         </button>
-  //       </div>
-  //     </div>
-  //   );
 
   const [navbar, setNavbar] = useState(false);
 
@@ -98,7 +53,7 @@ export default function Navbar() {
               })}
             </ul>
 
-            <div className="mt-3 space-y-2 lg:hidden md:inline-block cursor-pointer">
+            <div className="mt-3 space-y-2 lg:hidden  md:hidden cursor-pointer">
             <Avatar />
             </div>
           </div>
